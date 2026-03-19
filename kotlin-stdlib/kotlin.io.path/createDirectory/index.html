@@ -1,0 +1,2736 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>createDirectory - ktsreference</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "createDirectory";
+        var mkdocs_page_input_path = "kotlin-stdlib/kotlin.io.path/createDirectory.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> ktsreference
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Kotlin Reffrences</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../about/">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../example/">Example</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Kotlin stdlib</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../kotlin-stdlib/">kotlin-stdlib</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/AutoCloseable/">AutoCloseable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/Char/">Char</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/TODO/">TODO</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/UByteArray/">UByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/UIntArray/">UIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/ULongArray/">ULongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/UShortArray/">UShortArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/addSuppressed/">addSuppressed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/also/">also</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/and/">and</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/apply/">apply</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/arrayOf/">arrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/arrayOfNulls/">arrayOfNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/assert/">assert</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/booleanArrayOf/">booleanArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/byteArrayOf/">byteArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/charArrayOf/">charArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/check/">check</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/checkNotNull/">checkNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/code/">code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/compareTo/">compareTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/context/">context</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/contextOf/">contextOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/countLeadingZeroBits/">countLeadingZeroBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/countOneBits/">countOneBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/countTrailingZeroBits/">countTrailingZeroBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/dec/">dec</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/div/">div</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/doubleArrayOf/">doubleArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/emptyArray/">emptyArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/enumValueOf/">enumValueOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/enumValues/">enumValues</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/error/">error</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/floatArrayOf/">floatArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/floorDiv/">floorDiv</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/fold/">fold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/fromBits/">fromBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/getOrDefault/">getOrDefault</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/getOrElse/">getOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/getOrThrow/">getOrThrow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/getValue/">getValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/hashCode/">hashCode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/inc/">inc</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/intArrayOf/">intArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/inv/">inv</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/invoke/">invoke</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/isFinite/">isFinite</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/isInfinite/">isInfinite</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/isInitialized/">isInitialized</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/isNaN/">isNaN</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/lazy/">lazy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/lazyOf/">lazyOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/let/">let</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/longArrayOf/">longArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/map/">map</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/mapCatching/">mapCatching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/minus/">minus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/mod/">mod</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/onFailure/">onFailure</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/onSuccess/">onSuccess</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/or/">or</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/plus/">plus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/printStackTrace/">printStackTrace</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/recover/">recover</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/recoverCatching/">recoverCatching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/rem/">rem</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/repeat/">repeat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/require/">require</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/requireNotNull/">requireNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/rotateLeft/">rotateLeft</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/rotateRight/">rotateRight</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/run/">run</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/runCatching/">runCatching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/setValue/">setValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/shl/">shl</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/shortArrayOf/">shortArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/shr/">shr</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/stackTrace/">stackTrace</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/stackTraceToString/">stackTraceToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/suppressedExceptions/">suppressedExceptions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/suspend/">suspend</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/synchronized/">synchronized</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/takeHighestOneBit/">takeHighestOneBit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/takeIf/">takeIf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/takeLowestOneBit/">takeLowestOneBit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/takeUnless/">takeUnless</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/times/">times</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/to/">to</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toBigDecimal/">toBigDecimal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toBigInteger/">toBigInteger</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toBits/">toBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toRawBits/">toRawBits</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toString/">toString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toUByte/">toUByte</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toUInt/">toUInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toULong/">toULong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/toUShort/">toUShort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/unaryMinus/">unaryMinus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/use/">use</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/with/">with</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin/xor/">xor</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.collections</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/Iterable/">Iterable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/List/">List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/MutableList/">MutableList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/addAll/">addAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/aggregate/">aggregate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/aggregateTo/">aggregateTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/all/">all</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/any/">any</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/arrayListOf/">arrayListOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asByteArray/">asByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asIntArray/">asIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asIterable/">asIterable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asList/">asList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asLongArray/">asLongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asReversed/">asReversed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asSequence/">asSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asShortArray/">asShortArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asUByteArray/">asUByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asUIntArray/">asUIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asULongArray/">asULongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/asUShortArray/">asUShortArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associate/">associate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associateBy/">associateBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associateByTo/">associateByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associateTo/">associateTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associateWith/">associateWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/associateWithTo/">associateWithTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/average/">average</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/binarySearch/">binarySearch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/binarySearchBy/">binarySearchBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/buildList/">buildList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/buildMap/">buildMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/buildSet/">buildSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/chunked/">chunked</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/component1/">component1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/component2/">component2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/component3/">component3</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/component4/">component4</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/component5/">component5</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contains/">contains</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/containsAll/">containsAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/containsKey/">containsKey</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/containsValue/">containsValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentDeepEquals/">contentDeepEquals</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentDeepHashCode/">contentDeepHashCode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentDeepToString/">contentDeepToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentEquals/">contentEquals</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentHashCode/">contentHashCode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/contentToString/">contentToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/copy/">copy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/copyInto/">copyInto</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/copyOf/">copyOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/copyOfRange/">copyOfRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/count/">count</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/distinct/">distinct</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/distinctBy/">distinctBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/drop/">drop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/dropLast/">dropLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/dropLastWhile/">dropLastWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/dropWhile/">dropWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/eachCount/">eachCount</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/eachCountTo/">eachCountTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/elementAt/">elementAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/elementAtOrElse/">elementAtOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/elementAtOrNull/">elementAtOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/emptyList/">emptyList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/emptyMap/">emptyMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/emptySet/">emptySet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/fill/">fill</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filter/">filter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterIndexed/">filterIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterIndexedTo/">filterIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterIsInstance/">filterIsInstance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterIsInstanceTo/">filterIsInstanceTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterKeys/">filterKeys</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterNot/">filterNot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterNotNull/">filterNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterNotNullTo/">filterNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterNotTo/">filterNotTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterTo/">filterTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/filterValues/">filterValues</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/find/">find</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/findLast/">findLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/first/">first</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/firstNotNullOf/">firstNotNullOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/firstNotNullOfOrNull/">firstNotNullOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/firstOrNull/">firstOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/flatMap/">flatMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/flatMapIndexed/">flatMapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/flatMapIndexedTo/">flatMapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/flatMapTo/">flatMapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/flatten/">flatten</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/fold/">fold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/foldIndexed/">foldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/foldRight/">foldRight</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/foldRightIndexed/">foldRightIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/foldTo/">foldTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/forEach/">forEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/forEachIndexed/">forEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/get/">get</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/getOrDefault/">getOrDefault</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/getOrElse/">getOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/getOrNull/">getOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/getOrPut/">getOrPut</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/getValue/">getValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/groupBy/">groupBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/groupByTo/">groupByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/groupingBy/">groupingBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/hashMapOf/">hashMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/hashSetOf/">hashSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/ifEmpty/">ifEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/indexOf/">indexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/indexOfFirst/">indexOfFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/indexOfLast/">indexOfLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/indices/">indices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/intersect/">intersect</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/isEmpty/">isEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/isNotEmpty/">isNotEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/isNullOrEmpty/">isNullOrEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/iterator/">iterator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/joinTo/">joinTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/joinToString/">joinToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/last/">last</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/lastIndexOf/">lastIndexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/lastOrNull/">lastOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/linkedMapOf/">linkedMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/linkedSetOf/">linkedSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/linkedStringMapOf/">linkedStringMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/linkedStringSetOf/">linkedStringSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/listOf/">listOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/listOfNotNull/">listOfNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/map/">map</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapIndexed/">mapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapIndexedNotNull/">mapIndexedNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapIndexedNotNullTo/">mapIndexedNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapIndexedTo/">mapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapKeys/">mapKeys</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapKeysTo/">mapKeysTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapNotNull/">mapNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapNotNullTo/">mapNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapOf/">mapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapTo/">mapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapValues/">mapValues</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mapValuesTo/">mapValuesTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/max/">max</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxBy/">maxBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxByOrNull/">maxByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxOf/">maxOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxOfOrNull/">maxOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxOfWith/">maxOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxOfWithOrNull/">maxOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxOrNull/">maxOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxWith/">maxWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/maxWithOrNull/">maxWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/min/">min</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minBy/">minBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minByOrNull/">minByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minOf/">minOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minOfOrNull/">minOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minOfWith/">minOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minOfWithOrNull/">minOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minOrNull/">minOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minWith/">minWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minWithOrNull/">minWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minus/">minus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minusAssign/">minusAssign</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/minusElement/">minusElement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mutableListOf/">mutableListOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mutableMapOf/">mutableMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/mutableSetOf/">mutableSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/none/">none</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/onEach/">onEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/onEachIndexed/">onEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/orEmpty/">orEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/partition/">partition</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/plus/">plus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/plusAssign/">plusAssign</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/plusElement/">plusElement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/putAll/">putAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/random/">random</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/randomOrNull/">randomOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduce/">reduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceIndexed/">reduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceIndexedOrNull/">reduceIndexedOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceOrNull/">reduceOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceRight/">reduceRight</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceRightIndexed/">reduceRightIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceRightIndexedOrNull/">reduceRightIndexedOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceRightOrNull/">reduceRightOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reduceTo/">reduceTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/remove/">remove</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/removeAll/">removeAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/removeFirst/">removeFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/removeFirstOrNull/">removeFirstOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/removeLast/">removeLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/removeLastOrNull/">removeLastOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/replaceAll/">replaceAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/requireNoNulls/">requireNoNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/retainAll/">retainAll</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reverse/">reverse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reversed/">reversed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/reversedArray/">reversedArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/runningFold/">runningFold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/runningFoldIndexed/">runningFoldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/runningReduce/">runningReduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/runningReduceIndexed/">runningReduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/scan/">scan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/scanIndexed/">scanIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/set/">set</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/setOf/">setOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/setOfNotNull/">setOfNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/setValue/">setValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/shuffle/">shuffle</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/shuffled/">shuffled</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/single/">single</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/singleOrNull/">singleOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/slice/">slice</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sliceArray/">sliceArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sort/">sort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortBy/">sortBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortByDescending/">sortByDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortDescending/">sortDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortWith/">sortWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sorted/">sorted</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedArray/">sortedArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedArrayDescending/">sortedArrayDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedArrayWith/">sortedArrayWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedBy/">sortedBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedByDescending/">sortedByDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedDescending/">sortedDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedMapOf/">sortedMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedSetOf/">sortedSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sortedWith/">sortedWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/stringMapOf/">stringMapOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/stringSetOf/">stringSetOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/subtract/">subtract</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sum/">sum</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sumBy/">sumBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sumByDouble/">sumByDouble</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/sumOf/">sumOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/take/">take</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/takeLast/">takeLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/takeLastWhile/">takeLastWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/takeWhile/">takeWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toBooleanArray/">toBooleanArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toByteArray/">toByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toCharArray/">toCharArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toCollection/">toCollection</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toDoubleArray/">toDoubleArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toFloatArray/">toFloatArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toHashSet/">toHashSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toIntArray/">toIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toLongArray/">toLongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toMap/">toMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toMutableList/">toMutableList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toMutableMap/">toMutableMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toMutableSet/">toMutableSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toPair/">toPair</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toProperties/">toProperties</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toSet/">toSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toShortArray/">toShortArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toSortedMap/">toSortedMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toSortedSet/">toSortedSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toString/">toString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toTypedArray/">toTypedArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toUByteArray/">toUByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toUIntArray/">toUIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toULongArray/">toULongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/toUShortArray/">toUShortArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/union/">union</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/unzip/">unzip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/windowed/">windowed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/withDefault/">withDefault</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/zip/">zip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.collections/zipWithNext/">zipWithNext</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.comparisons</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/compareBy/">compareBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/compareByDescending/">compareByDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/compareValues/">compareValues</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/compareValuesBy/">compareValuesBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/maxOf/">maxOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/minOf/">minOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/naturalOrder/">naturalOrder</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/nullsFirst/">nullsFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/nullsLast/">nullsLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/reverseOrder/">reverseOrder</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/reversed/">reversed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/then/">then</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/thenBy/">thenBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/thenByDescending/">thenByDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/thenComparator/">thenComparator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.comparisons/thenDescending/">thenDescending</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.concurrent</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/AtomicArray/">AtomicArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/AtomicIntArray/">AtomicIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/AtomicLongArray/">AtomicLongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/fixedRateTimer/">fixedRateTimer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/getOrSet/">getOrSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/read/">read</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/schedule/">schedule</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/scheduleAtFixedRate/">scheduleAtFixedRate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/thread/">thread</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/timer/">timer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/timerTask/">timerTask</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/withLock/">withLock</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent/write/">write</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.concurrent.atomics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/AtomicArray/">AtomicArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/AtomicIntArray/">AtomicIntArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/AtomicLongArray/">AtomicLongArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/asJavaAtomic/">asJavaAtomic</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/asJavaAtomicArray/">asJavaAtomicArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/asKotlinAtomic/">asKotlinAtomic</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/asKotlinAtomicArray/">asKotlinAtomicArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/atomicArrayOfNulls/">atomicArrayOfNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/decrementAndFetch/">decrementAndFetch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/decrementAndFetchAt/">decrementAndFetchAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndDecrement/">fetchAndDecrement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndDecrementAt/">fetchAndDecrementAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndIncrement/">fetchAndIncrement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndIncrementAt/">fetchAndIncrementAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndUpdate/">fetchAndUpdate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/fetchAndUpdateAt/">fetchAndUpdateAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/incrementAndFetch/">incrementAndFetch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/incrementAndFetchAt/">incrementAndFetchAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/minusAssign/">minusAssign</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/plusAssign/">plusAssign</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/update/">update</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/updateAndFetch/">updateAndFetch</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/updateAndFetchAt/">updateAndFetchAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.concurrent.atomics/updateAt/">updateAt</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.contracts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.contracts/contract/">contract</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.coroutines</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/Continuation/">Continuation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/coroutineContext/">coroutineContext</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/createCoroutine/">createCoroutine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/getPolymorphicElement/">getPolymorphicElement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/minusPolymorphicKey/">minusPolymorphicKey</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/resume/">resume</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/resumeWithException/">resumeWithException</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/startCoroutine/">startCoroutine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines/suspendCoroutine/">suspendCoroutine</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.coroutines.cancellation</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.cancellation/CancellationException/">CancellationException</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.coroutines.intrinsics</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.intrinsics/COROUTINE_SUSPENDED/">COROUTINE_SUSPENDED</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.intrinsics/createCoroutineUnintercepted/">createCoroutineUnintercepted</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.intrinsics/intercepted/">intercepted</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.intrinsics/startCoroutineUninterceptedOrReturn/">startCoroutineUninterceptedOrReturn</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.coroutines.intrinsics/suspendCoroutineUninterceptedOrReturn/">suspendCoroutineUninterceptedOrReturn</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.enums</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.enums/enumEntries/">enumEntries</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.experimental</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.experimental/and/">and</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.experimental/inv/">inv</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.experimental/or/">or</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.experimental/xor/">xor</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.io</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/DEFAULT_BUFFER_SIZE/">DEFAULT_BUFFER_SIZE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/appendBytes/">appendBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/appendText/">appendText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/buffered/">buffered</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/bufferedReader/">bufferedReader</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/bufferedWriter/">bufferedWriter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/byteInputStream/">byteInputStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/copyRecursively/">copyRecursively</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/copyTo/">copyTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/createTempDir/">createTempDir</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/createTempFile/">createTempFile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/deleteRecursively/">deleteRecursively</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/endsWith/">endsWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/extension/">extension</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/forEachBlock/">forEachBlock</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/forEachLine/">forEachLine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/inputStream/">inputStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/invariantSeparatorsPath/">invariantSeparatorsPath</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/isRooted/">isRooted</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/iterator/">iterator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/lineSequence/">lineSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/nameWithoutExtension/">nameWithoutExtension</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/normalize/">normalize</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/outputStream/">outputStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/print/">print</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/printWriter/">printWriter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/println/">println</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readBytes/">readBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readLine/">readLine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readLines/">readLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readText/">readText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/reader/">reader</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readln/">readln</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/readlnOrNull/">readlnOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/relativeTo/">relativeTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/relativeToOrNull/">relativeToOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/relativeToOrSelf/">relativeToOrSelf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/resolve/">resolve</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/resolveSibling/">resolveSibling</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/startsWith/">startsWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/toRelativeString/">toRelativeString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/use/">use</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/useLines/">useLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/walk/">walk</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/walkBottomUp/">walkBottomUp</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/walkTopDown/">walkTopDown</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/writeBytes/">writeBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/writeText/">writeText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io/writer/">writer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.io.encoding</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io.encoding/decodingWith/">decodingWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.io.encoding/encodingWith/">encodingWith</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Kotlin.io.path</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Path/">Path</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../absolute/">absolute</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../absolutePathString/">absolutePathString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../appendBytes/">appendBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../appendLines/">appendLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../appendText/">appendText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../bufferedReader/">bufferedReader</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../bufferedWriter/">bufferedWriter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../copyTo/">copyTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../copyToRecursively/">copyToRecursively</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createDirectories/">createDirectories</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">createDirectory</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createFile/">createFile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createLinkPointingTo/">createLinkPointingTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createParentDirectories/">createParentDirectories</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createSymbolicLinkPointingTo/">createSymbolicLinkPointingTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createTempDirectory/">createTempDirectory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../createTempFile/">createTempFile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../deleteExisting/">deleteExisting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../deleteIfExists/">deleteIfExists</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../deleteRecursively/">deleteRecursively</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../div/">div</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../exists/">exists</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../extension/">extension</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileAttributesView/">fileAttributesView</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileAttributesViewOrNull/">fileAttributesViewOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileSize/">fileSize</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileStore/">fileStore</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../fileVisitor/">fileVisitor</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../forEachDirectoryEntry/">forEachDirectoryEntry</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../forEachLine/">forEachLine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../getAttribute/">getAttribute</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../getLastModifiedTime/">getLastModifiedTime</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../getOwner/">getOwner</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../getPosixFilePermissions/">getPosixFilePermissions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../inputStream/">inputStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../invariantSeparatorsPath/">invariantSeparatorsPath</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../invariantSeparatorsPathString/">invariantSeparatorsPathString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isDirectory/">isDirectory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isExecutable/">isExecutable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isHidden/">isHidden</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isReadable/">isReadable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isRegularFile/">isRegularFile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isSameFileAs/">isSameFileAs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isSymbolicLink/">isSymbolicLink</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../isWritable/">isWritable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../listDirectoryEntries/">listDirectoryEntries</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../moveTo/">moveTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../name/">name</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../nameWithoutExtension/">nameWithoutExtension</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../notExists/">notExists</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../outputStream/">outputStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../pathString/">pathString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../readAttributes/">readAttributes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../readBytes/">readBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../readLines/">readLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../readSymbolicLink/">readSymbolicLink</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../readText/">readText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../reader/">reader</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../relativeTo/">relativeTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../relativeToOrNull/">relativeToOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../relativeToOrSelf/">relativeToOrSelf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../setAttribute/">setAttribute</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../setLastModifiedTime/">setLastModifiedTime</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../setOwner/">setOwner</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../setPosixFilePermissions/">setPosixFilePermissions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../toPath/">toPath</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../useDirectoryEntries/">useDirectoryEntries</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../useLines/">useLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../visitFileTree/">visitFileTree</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../walk/">walk</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../writeBytes/">writeBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../writeLines/">writeLines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../writeText/">writeText</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../writer/">writer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.js</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/add/">add</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/asArray/">asArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/asDynamic/">asDynamic</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/console/">console</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/definedExternally/">definedExternally</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/eval/">eval</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/get/">get</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/iterator/">iterator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/js/">js</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/jsTypeOf/">jsTypeOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/json/">json</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/kotlin/">kotlin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/parseFloat/">parseFloat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/parseInt/">parseInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/reset/">reset</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/toArray/">toArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/toJsArray/">toJsArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/toThrowableOrNull/">toThrowableOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/undefined/">undefined</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.js/unsafeCast/">unsafeCast</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.jvm</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/annotationClass/">annotationClass</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/declaringJavaClass/">declaringJavaClass</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/isArrayOf/">isArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/java/">java</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/javaClass/">javaClass</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/javaObjectType/">javaObjectType</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/javaPrimitiveType/">javaPrimitiveType</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm/kotlin/">kotlin</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.jvm.optionals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/asSequence/">asSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/getOrDefault/">getOrDefault</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/getOrElse/">getOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/getOrNull/">getOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/toCollection/">toCollection</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.jvm.optionals/toSet/">toSet</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.math</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/E/">E</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/IEEErem/">IEEErem</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/PI/">PI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/abs/">abs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/absoluteValue/">absoluteValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/acos/">acos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/acosh/">acosh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/asin/">asin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/asinh/">asinh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/atan/">atan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/atan2/">atan2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/atanh/">atanh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/cbrt/">cbrt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/ceil/">ceil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/cos/">cos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/cosh/">cosh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/exp/">exp</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/expm1/">expm1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/floor/">floor</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/hypot/">hypot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/ln/">ln</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/ln1p/">ln1p</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/log/">log</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/log10/">log10</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/log2/">log2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/max/">max</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/min/">min</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/nextDown/">nextDown</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/nextTowards/">nextTowards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/nextUp/">nextUp</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/pow/">pow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/round/">round</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/roundToInt/">roundToInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/roundToLong/">roundToLong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/sign/">sign</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/sin/">sin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/sinh/">sinh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/sqrt/">sqrt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/tan/">tan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/tanh/">tanh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/truncate/">truncate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/ulp/">ulp</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.math/withSign/">withSign</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.native</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/asCPointer/">asCPointer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/asUCPointer/">asUCPointer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getCharAt/">getCharAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getDoubleAt/">getDoubleAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getFloatAt/">getFloatAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getIntAt/">getIntAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getLongAt/">getLongAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getShortAt/">getShortAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getStackTraceAddresses/">getStackTraceAddresses</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getUByteAt/">getUByteAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getUIntAt/">getUIntAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getULongAt/">getULongAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getUShortAt/">getUShortAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/getUnhandledExceptionHook/">getUnhandledExceptionHook</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/identityHashCode/">identityHashCode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/immutableBlobOf/">immutableBlobOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/initRuntimeIfNeeded/">initRuntimeIfNeeded</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/isExperimentalMM/">isExperimentalMM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/processUnhandledException/">processUnhandledException</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setCharAt/">setCharAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setDoubleAt/">setDoubleAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setFloatAt/">setFloatAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setIntAt/">setIntAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setLongAt/">setLongAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setShortAt/">setShortAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setUByteAt/">setUByteAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setUIntAt/">setUIntAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setULongAt/">setULongAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setUShortAt/">setUShortAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/setUnhandledExceptionHook/">setUnhandledExceptionHook</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/toByteArray/">toByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/toUByteArray/">toUByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native/vectorOf/">vectorOf</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.native.concurrent</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/atomicLazy/">atomicLazy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/attach/">attach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/callContinuation0/">callContinuation0</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/callContinuation1/">callContinuation1</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/callContinuation2/">callContinuation2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/ensureNeverFrozen/">ensureNeverFrozen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/freeze/">freeze</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/isFrozen/">isFrozen</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/waitForMultipleFutures/">waitForMultipleFutures</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.concurrent/withWorker/">withWorker</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.native.ref</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.native.ref/createCleaner/">createCleaner</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.random</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/Random/">Random</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/asJavaRandom/">asJavaRandom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/asKotlinRandom/">asKotlinRandom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/nextInt/">nextInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/nextLong/">nextLong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/nextUBytes/">nextUBytes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/nextUInt/">nextUInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.random/nextULong/">nextULong</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.ranges</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/coerceAtLeast/">coerceAtLeast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/coerceAtMost/">coerceAtMost</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/coerceIn/">coerceIn</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/contains/">contains</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/downTo/">downTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/first/">first</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/firstOrNull/">firstOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/last/">last</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/lastOrNull/">lastOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/random/">random</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/randomOrNull/">randomOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/rangeTo/">rangeTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/rangeUntil/">rangeUntil</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/reversed/">reversed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/step/">step</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.ranges/until/">until</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.reflect</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/cast/">cast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/createInstance/">createInstance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/findAssociatedObject/">findAssociatedObject</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/javaType/">javaType</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/safeCast/">safeCast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.reflect/typeOf/">typeOf</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.sequences</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/Sequence/">Sequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/all/">all</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/any/">any</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/asIterable/">asIterable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/asSequence/">asSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associate/">associate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associateBy/">associateBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associateByTo/">associateByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associateTo/">associateTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associateWith/">associateWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/associateWithTo/">associateWithTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/average/">average</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/chunked/">chunked</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/constrainOnce/">constrainOnce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/contains/">contains</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/count/">count</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/distinct/">distinct</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/distinctBy/">distinctBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/drop/">drop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/dropWhile/">dropWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/elementAt/">elementAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/elementAtOrElse/">elementAtOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/elementAtOrNull/">elementAtOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/emptySequence/">emptySequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filter/">filter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterIndexed/">filterIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterIndexedTo/">filterIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterIsInstance/">filterIsInstance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterIsInstanceTo/">filterIsInstanceTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterNot/">filterNot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterNotNull/">filterNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterNotNullTo/">filterNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterNotTo/">filterNotTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/filterTo/">filterTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/find/">find</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/findLast/">findLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/first/">first</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/firstNotNullOf/">firstNotNullOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/firstNotNullOfOrNull/">firstNotNullOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/firstOrNull/">firstOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/flatMap/">flatMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/flatMapIndexed/">flatMapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/flatMapIndexedTo/">flatMapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/flatMapTo/">flatMapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/flatten/">flatten</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/fold/">fold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/foldIndexed/">foldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/forEach/">forEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/forEachIndexed/">forEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/generateSequence/">generateSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/groupBy/">groupBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/groupByTo/">groupByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/groupingBy/">groupingBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/ifEmpty/">ifEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/indexOf/">indexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/indexOfFirst/">indexOfFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/indexOfLast/">indexOfLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/iterator/">iterator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/joinTo/">joinTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/joinToString/">joinToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/last/">last</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/lastIndexOf/">lastIndexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/lastOrNull/">lastOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/map/">map</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapIndexed/">mapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapIndexedNotNull/">mapIndexedNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapIndexedNotNullTo/">mapIndexedNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapIndexedTo/">mapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapNotNull/">mapNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapNotNullTo/">mapNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/mapTo/">mapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/max/">max</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxBy/">maxBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxByOrNull/">maxByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxOf/">maxOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxOfOrNull/">maxOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxOfWith/">maxOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxOfWithOrNull/">maxOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxOrNull/">maxOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxWith/">maxWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/maxWithOrNull/">maxWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/min/">min</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minBy/">minBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minByOrNull/">minByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minOf/">minOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minOfOrNull/">minOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minOfWith/">minOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minOfWithOrNull/">minOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minOrNull/">minOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minWith/">minWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minWithOrNull/">minWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minus/">minus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/minusElement/">minusElement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/none/">none</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/onEach/">onEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/onEachIndexed/">onEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/orEmpty/">orEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/partition/">partition</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/plus/">plus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/plusElement/">plusElement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/reduce/">reduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/reduceIndexed/">reduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/reduceIndexedOrNull/">reduceIndexedOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/reduceOrNull/">reduceOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/requireNoNulls/">requireNoNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/runningFold/">runningFold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/runningFoldIndexed/">runningFoldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/runningReduce/">runningReduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/runningReduceIndexed/">runningReduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/scan/">scan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/scanIndexed/">scanIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sequence/">sequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sequenceOf/">sequenceOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/shuffled/">shuffled</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/single/">single</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/singleOrNull/">singleOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sorted/">sorted</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sortedBy/">sortedBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sortedByDescending/">sortedByDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sortedDescending/">sortedDescending</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sortedWith/">sortedWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sum/">sum</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sumBy/">sumBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sumByDouble/">sumByDouble</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/sumOf/">sumOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/take/">take</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/takeWhile/">takeWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toCollection/">toCollection</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toHashSet/">toHashSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toMutableList/">toMutableList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toMutableSet/">toMutableSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toSet/">toSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/toSortedSet/">toSortedSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/unzip/">unzip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/windowed/">windowed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/zip/">zip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.sequences/zipWithNext/">zipWithNext</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.streams</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.streams/asSequence/">asSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.streams/asStream/">asStream</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.streams/toList/">toList</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.system</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/exitProcess/">exitProcess</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/getTimeMicros/">getTimeMicros</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/getTimeMillis/">getTimeMillis</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/getTimeNanos/">getTimeNanos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/measureNanoTime/">measureNanoTime</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/measureTimeMicros/">measureTimeMicros</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.system/measureTimeMillis/">measureTimeMillis</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.text</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/CASE_INSENSITIVE_ORDER/">CASE_INSENSITIVE_ORDER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/HexFormat/">HexFormat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/String/">String</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/all/">all</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/any/">any</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/append/">append</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/appendLine/">appendLine</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/appendRange/">appendRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/appendln/">appendln</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/asIterable/">asIterable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/asSequence/">asSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associate/">associate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associateBy/">associateBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associateByTo/">associateByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associateTo/">associateTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associateWith/">associateWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/associateWithTo/">associateWithTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/buildString/">buildString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/capitalize/">capitalize</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/category/">category</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/charset/">charset</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/chunked/">chunked</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/chunkedSequence/">chunkedSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/clear/">clear</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/codePointAt/">codePointAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/codePointBefore/">codePointBefore</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/codePointCount/">codePointCount</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/commonPrefixWith/">commonPrefixWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/commonSuffixWith/">commonSuffixWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/compareTo/">compareTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/concat/">concat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/concatToString/">concatToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/contains/">contains</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/contentEquals/">contentEquals</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/count/">count</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/decapitalize/">decapitalize</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/decodeToString/">decodeToString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/deleteAt/">deleteAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/deleteCharAt/">deleteCharAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/deleteRange/">deleteRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/digitToChar/">digitToChar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/digitToInt/">digitToInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/digitToIntOrNull/">digitToIntOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/directionality/">directionality</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/drop/">drop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/dropLast/">dropLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/dropLastWhile/">dropLastWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/dropWhile/">dropWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/elementAt/">elementAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/elementAtOrElse/">elementAtOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/elementAtOrNull/">elementAtOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/encodeToByteArray/">encodeToByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/endsWith/">endsWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/equals/">equals</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filter/">filter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filterIndexed/">filterIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filterIndexedTo/">filterIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filterNot/">filterNot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filterNotTo/">filterNotTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/filterTo/">filterTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/find/">find</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/findAnyOf/">findAnyOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/findLast/">findLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/findLastAnyOf/">findLastAnyOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/first/">first</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/firstNotNullOf/">firstNotNullOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/firstNotNullOfOrNull/">firstNotNullOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/firstOrNull/">firstOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/flatMap/">flatMap</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/flatMapIndexed/">flatMapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/flatMapIndexedTo/">flatMapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/flatMapTo/">flatMapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/fold/">fold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/foldIndexed/">foldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/foldRight/">foldRight</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/foldRightIndexed/">foldRightIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/forEach/">forEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/forEachIndexed/">forEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/format/">format</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/get/">get</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/getOrElse/">getOrElse</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/getOrNull/">getOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/groupBy/">groupBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/groupByTo/">groupByTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/groupingBy/">groupingBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hasSurrogatePairAt/">hasSurrogatePairAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToByte/">hexToByte</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToByteArray/">hexToByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToInt/">hexToInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToLong/">hexToLong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToShort/">hexToShort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToUByte/">hexToUByte</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToUByteArray/">hexToUByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToUInt/">hexToUInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToULong/">hexToULong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/hexToUShort/">hexToUShort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/ifBlank/">ifBlank</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/ifEmpty/">ifEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/indexOf/">indexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/indexOfAny/">indexOfAny</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/indexOfFirst/">indexOfFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/indexOfLast/">indexOfLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/indices/">indices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/insert/">insert</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/insertRange/">insertRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/intern/">intern</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isBlank/">isBlank</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isDefined/">isDefined</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isDigit/">isDigit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isEmpty/">isEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isHighSurrogate/">isHighSurrogate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isISOControl/">isISOControl</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isIdentifierIgnorable/">isIdentifierIgnorable</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isJavaIdentifierPart/">isJavaIdentifierPart</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isJavaIdentifierStart/">isJavaIdentifierStart</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isLetter/">isLetter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isLetterOrDigit/">isLetterOrDigit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isLowSurrogate/">isLowSurrogate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isLowerCase/">isLowerCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isNotBlank/">isNotBlank</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isNotEmpty/">isNotEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isNullOrBlank/">isNullOrBlank</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isNullOrEmpty/">isNullOrEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isSupplementaryCodePoint/">isSupplementaryCodePoint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isSurrogate/">isSurrogate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isSurrogatePair/">isSurrogatePair</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isTitleCase/">isTitleCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isUpperCase/">isUpperCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/isWhitespace/">isWhitespace</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/iterator/">iterator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/last/">last</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lastIndexOf/">lastIndexOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lastIndexOfAny/">lastIndexOfAny</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lastOrNull/">lastOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lineSequence/">lineSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lines/">lines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lowercase/">lowercase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/lowercaseChar/">lowercaseChar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/map/">map</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapIndexed/">mapIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapIndexedNotNull/">mapIndexedNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapIndexedNotNullTo/">mapIndexedNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapIndexedTo/">mapIndexedTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapNotNull/">mapNotNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapNotNullTo/">mapNotNullTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/mapTo/">mapTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/match/">match</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/matches/">matches</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/max/">max</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxBy/">maxBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxByOrNull/">maxByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxOf/">maxOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxOfOrNull/">maxOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxOfWith/">maxOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxOfWithOrNull/">maxOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxOrNull/">maxOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxWith/">maxWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/maxWithOrNull/">maxWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/min/">min</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minBy/">minBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minByOrNull/">minByOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minOf/">minOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minOfOrNull/">minOfOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minOfWith/">minOfWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minOfWithOrNull/">minOfWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minOrNull/">minOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minWith/">minWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/minWithOrNull/">minWithOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/none/">none</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/offsetByCodePoints/">offsetByCodePoints</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/onEach/">onEach</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/onEachIndexed/">onEachIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/orEmpty/">orEmpty</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/padEnd/">padEnd</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/padStart/">padStart</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/partition/">partition</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/plus/">plus</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/prependIndent/">prependIndent</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/random/">random</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/randomOrNull/">randomOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduce/">reduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceIndexed/">reduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceIndexedOrNull/">reduceIndexedOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceOrNull/">reduceOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceRight/">reduceRight</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceRightIndexed/">reduceRightIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceRightIndexedOrNull/">reduceRightIndexedOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reduceRightOrNull/">reduceRightOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/regionMatches/">regionMatches</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/removePrefix/">removePrefix</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/removeRange/">removeRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/removeSuffix/">removeSuffix</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/removeSurrounding/">removeSurrounding</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/repeat/">repeat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replace/">replace</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceAfter/">replaceAfter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceAfterLast/">replaceAfterLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceBefore/">replaceBefore</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceBeforeLast/">replaceBeforeLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceFirst/">replaceFirst</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceFirstChar/">replaceFirstChar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceIndent/">replaceIndent</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceIndentByMargin/">replaceIndentByMargin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/replaceRange/">replaceRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/reversed/">reversed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/runningFold/">runningFold</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/runningFoldIndexed/">runningFoldIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/runningReduce/">runningReduce</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/runningReduceIndexed/">runningReduceIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/scan/">scan</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/scanIndexed/">scanIndexed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/set/">set</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/setCharAt/">setCharAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/setRange/">setRange</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/single/">single</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/singleOrNull/">singleOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/slice/">slice</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/split/">split</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/splitToSequence/">splitToSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/startsWith/">startsWith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/subSequence/">subSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/substring/">substring</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/substringAfter/">substringAfter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/substringAfterLast/">substringAfterLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/substringBefore/">substringBefore</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/substringBeforeLast/">substringBeforeLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/sumBy/">sumBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/sumByDouble/">sumByDouble</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/sumOf/">sumOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/take/">take</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/takeLast/">takeLast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/takeLastWhile/">takeLastWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/takeWhile/">takeWhile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/titlecase/">titlecase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/titlecaseChar/">titlecaseChar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBigDecimal/">toBigDecimal</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBigDecimalOrNull/">toBigDecimalOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBigInteger/">toBigInteger</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBigIntegerOrNull/">toBigIntegerOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBoolean/">toBoolean</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBooleanStrict/">toBooleanStrict</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toBooleanStrictOrNull/">toBooleanStrictOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toByte/">toByte</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toByteArray/">toByteArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toByteOrNull/">toByteOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toCharArray/">toCharArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toChars/">toChars</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toCodePoint/">toCodePoint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toCollection/">toCollection</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toDouble/">toDouble</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toDoubleOrNull/">toDoubleOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toFloat/">toFloat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toFloatOrNull/">toFloatOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toHashSet/">toHashSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toHexString/">toHexString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toInt/">toInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toIntOrNull/">toIntOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toList/">toList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toLong/">toLong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toLongOrNull/">toLongOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toLowerCase/">toLowerCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toMutableList/">toMutableList</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toPattern/">toPattern</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toRegex/">toRegex</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toSet/">toSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toShort/">toShort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toShortOrNull/">toShortOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toSortedSet/">toSortedSet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toString/">toString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toTitleCase/">toTitleCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUByte/">toUByte</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUByteOrNull/">toUByteOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUInt/">toUInt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUIntOrNull/">toUIntOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toULong/">toULong</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toULongOrNull/">toULongOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUShort/">toUShort</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUShortOrNull/">toUShortOrNull</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/toUpperCase/">toUpperCase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/trim/">trim</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/trimEnd/">trimEnd</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/trimIndent/">trimIndent</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/trimMargin/">trimMargin</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/trimStart/">trimStart</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/uppercase/">uppercase</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/uppercaseChar/">uppercaseChar</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/windowed/">windowed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/windowedSequence/">windowedSequence</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/zip/">zip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.text/zipWithNext/">zipWithNext</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.time</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/asClock/">asClock</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/isDistantFuture/">isDistantFuture</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/isDistantPast/">isDistantPast</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/measureTime/">measureTime</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/measureTimedValue/">measureTimedValue</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/times/">times</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toDuration/">toDuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toDurationUnit/">toDurationUnit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toJSDate/">toJSDate</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toJavaDuration/">toJavaDuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toJavaInstant/">toJavaInstant</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toKotlinDuration/">toKotlinDuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toKotlinInstant/">toKotlinInstant</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.time/toTimeUnit/">toTimeUnit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.uuid</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.uuid/getUuid/">getUuid</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.uuid/putUuid/">putUuid</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.uuid/toJavaUuid/">toJavaUuid</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.uuid/toKotlinUuid/">toKotlinUuid</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlin.wasm.unsafe</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlin.wasm.unsafe/withScopedMemoryAllocator/">withScopedMemoryAllocator</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlinx.cinterop</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/alloc/">alloc</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/allocArray/">allocArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/allocArrayOf/">allocArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/allocArrayOfPointersTo/">allocArrayOfPointersTo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/asStableRef/">asStableRef</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/cValuesOf/">cValuesOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/cstr/">cstr</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/getOriginalKotlinClass/">getOriginalKotlinClass</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/initBy/">initBy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/interpretCPointer/">interpretCPointer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/interpretNullablePointed/">interpretNullablePointed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/interpretPointed/">interpretPointed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/memScoped/">memScoped</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/memberAt/">memberAt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/narrow/">narrow</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/pointed/">pointed</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/ptr/">ptr</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/reinterpret/">reinterpret</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/signExtend/">signExtend</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/staticCFunction/">staticCFunction</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/toCStringArray/">toCStringArray</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/toKString/">toKString</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/toKStringFromUtf16/">toKStringFromUtf16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/toKStringFromUtf32/">toKStringFromUtf32</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/toKStringFromUtf8/">toKStringFromUtf8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/typeOf/">typeOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/useContents/">useContents</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/utf16/">utf16</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/utf32/">utf32</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/utf8/">utf8</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/value/">value</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop/wcstr/">wcstr</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Kotlinx.cinterop.internal</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../kotlinx.cinterop.internal/detachObjCObject/">detachObjCObject</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Org.w3c.dom</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../org.w3c.dom/asList/">asList</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">ktsreference</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Kotlin stdlib</li>
+          <li class="breadcrumb-item">Kotlin.io.path</li>
+      <li class="breadcrumb-item active">createDirectory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="createdirectory">createDirectory</h1>
+<p>Creates a new directory or throws an exception if there is already a file or directory located by this path.</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@IgnorableReturnValueinline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">Path</span><span class="p">.</span><span class="nf">createDirectory</span><span class="p">(</span><span class="k">vararg</span><span class="w"> </span><span class="n">attributes</span><span class="p">:</span><span class="w"> </span><span class="n">FileAttribute</span><span class="o">&lt;*&gt;</span><span class="p">):</span><span class="w"> </span><span class="n">Path</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">java.nio.file.attribute.PosixFilePermission</span>
+<span class="k">import</span><span class="w"> </span><span class="nn">java.nio.file.attribute.PosixFilePermissions</span>
+<span class="k">import</span><span class="w"> </span><span class="nn">kotlin.io.path.*</span>
+
+<span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Path where the new directory will be created</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">dirPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;demoDir&quot;</span><span class="p">.</span><span class="na">toPath</span><span class="p">()</span>
+
+<span class="w">    </span><span class="c1">// Optional file permissions attribute (e.g., rwx for owner, r-x for group, --- for others)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">perms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PosixFilePermissions</span><span class="p">.</span><span class="na">fromString</span><span class="p">(</span><span class="s">&quot;rwxr-x---&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">attrs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PosixFilePermissions</span><span class="p">.</span><span class="na">asFileAttribute</span><span class="p">(</span><span class="n">perms</span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1">// Create the directory</span>
+<span class="w">    </span><span class="n">dirPath</span><span class="p">.</span><span class="na">createDirectory</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span>
+
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Directory created at: </span><span class="si">${</span><span class="n">dirPath</span><span class="p">.</span><span class="na">toAbsolutePath</span><span class="p">()</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.io.path/create-directory.html">Source</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../createDirectories/" class="btn btn-neutral float-left" title="createDirectories"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../createFile/" class="btn btn-neutral float-right" title="createFile">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../createDirectories/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../createFile/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
