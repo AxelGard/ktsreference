@@ -2,8 +2,6 @@
 
 # and
 
- [kotlin-stdlib](/kotlin-stdlib) / [kotlin](/kotlin-stdlib/kotlin) / [and](kotlin-stdlib/kotlin/and)
-
 Performs a bitwise AND operation between the two values.
 
 ```kotlin
@@ -14,12 +12,12 @@ infix inline fun BigInteger.and(other: BigInteger): BigInteger(source)
 import java.math.BigInteger
 
 fun main() {
-    val a = BigInteger("0b1101", 2)   // 13
-    val b = BigInteger("0b1011", 2)   // 11
+    val a = BigInteger("15")   // binary 1111
+    val b = BigInteger("10")   // binary 1010
 
-    val result = a and b              // bitwise AND
+    val c = a and b            // infix usage of BigInteger.and
 
-    println(result)                   // prints 9
+    println("$a AND $b = $c")  // prints: 15 AND 10 = 10
 }
 ```
 
