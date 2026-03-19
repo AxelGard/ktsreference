@@ -1,0 +1,7 @@
+site_name: "ktsreference"
+markdown_extensions:
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+theme:
+  name: readthedocs
