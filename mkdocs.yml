@@ -1,7 +1,7 @@
 site_name: "ktsreference"
-site_url: https://AxelGard.github.io/mkdocs-demo/
-site_author: AxelGard
-repo_name: AxelGard/ktsreference
+site_url: https://axelgard.github.io/mkdocs-demo/
+site_author: AxelGard 
+repo_name: axelgard/ktsreference
 repo_url: https://github.com/AxelGard/ktsreference
 
 markdown_extensions:
