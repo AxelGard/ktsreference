@@ -20,7 +20,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install mkdocs
-          pip install mkdocs-deploy-gh-pages
 
       - name: Deploy site
         run: mkdocs gh-deploy --force
