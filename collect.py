@@ -125,8 +125,11 @@ def main(args):
     file = args[0]
     with open(file, "r" ) as f:
         urls = json.load(f)
-    for url in tqdm(urls[:10]):
-        make_page(url)
+    for url in tqdm(urls):
+        try: 
+            make_page(url)
+        except Exception as e:
+            pass
 
 if __name__ == "__main__":
     main(sys.argv[1:])

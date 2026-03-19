@@ -9,18 +9,22 @@ expect fun Throwable.addSuppressed(exception: Throwable)(source)
 ```
 
 ```kotlin
-fun main() {
-    val primary = RuntimeException("Primary exception")
-    val suppressed = RuntimeException("Suppressed exception")
+import java.io.IOException
 
+fun main() {
     try {
-        // Something that throws the primary exception
+        // Primary failure
+        throw IOException("Failed to open file")
+    } catch (primary: IOException) {
+        try {
+            // Secondary failure during cleanup
+            throw IllegalStateException("Cleanup failed")
+        } catch (secondary: Exception) {
+            // Suppress the secondary exception
+            primary.addSuppressed(secondary)
+        }
+        // Rethrow the original exception with suppressed info
         throw primary
-    } catch (e: Throwable) {
-        // Add the suppressed exception
-        e.addSuppressed(suppressed)
-        // Re‑throw so the stack trace contains both
-        throw e
     }
 }
 ```

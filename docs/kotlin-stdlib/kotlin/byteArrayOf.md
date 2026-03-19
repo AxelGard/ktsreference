@@ -9,10 +9,9 @@ expect fun byteArrayOf(vararg elements: Byte): ByteArray(source)
 ```
 
 ```kotlin
-fun main() {
-    val bytes = byteArrayOf(0x01, 0x02, 0x03, 0x04)
-    println(bytes.joinToString(prefix = "[", postfix = "]") { "0x%02X".format(it) })
-}
+val numbers = byteArrayOf(0x01, 0x02, 0x03, 0x04)
+
+println(numbers.joinToString(prefix = "[", postfix = "]") { it.toString() })
 ```
 
 [Source](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/byte-array-of.html)

@@ -10,11 +10,10 @@ expect inline fun <T> arrayOf(vararg elements: T): Array<T>(source)
 
 ```kotlin
 fun main() {
-    val numbers = arrayOf(1, 2, 3, 4, 5)
-    val names   = arrayOf("Alice", "Bob", "Charlie")
-
-    println(numbers.joinToString(", "))   // 1, 2, 3, 4, 5
-    println(names[0])                    // Alice
+    val numbers = arrayOf(10, 20, 30)
+    val words = arrayOf("foo", "bar", "baz")
+    println(numbers.joinToString()) // prints: 10, 20, 30
+    println(words.joinToString())   // prints: foo, bar, baz
 }
 ```
 

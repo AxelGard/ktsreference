@@ -8,15 +8,11 @@ Throws an AssertionError if the value is false and runtime assertions have been 
 inline fun assert(value: Boolean)(source)
 ```
 
-```kotlin
 fun main() {
-    val a = 10
-    val b = 5
-
-    // Simple assertion using the inline assert with a lazy message
-    assert(a > b) { "Expected a ($a) to be greater than b ($b)" }
+    val number = 42
+    assert(number > 0)
+    println("Number is positive")
 }
-```
 
 [Source](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/assert.html)
 

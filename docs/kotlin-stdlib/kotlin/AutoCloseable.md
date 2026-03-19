@@ -9,15 +9,13 @@ expect inline fun AutoCloseable(crossinline closeAction: () -> Unit): AutoClosea
 ```
 
 ```kotlin
-import kotlin.AutoCloseable
-
 fun main() {
     val resource = AutoCloseable {
-        println("Resource closed")
+        println("Resource has been closed")
     }
 
     resource.use {
-        println("Using the resource")
+        println("Working with resource")
     }
 }
 ```

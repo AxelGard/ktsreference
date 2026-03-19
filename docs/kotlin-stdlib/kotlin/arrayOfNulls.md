@@ -9,15 +9,12 @@ expect fun <T> arrayOfNulls(size: Int): Array<T?>(source)
 ```
 
 ```kotlin
-// Create an array of 3 nullable Strings, all initialized to null
-val names: Array<String?> = arrayOfNulls(3)
+val numbers: Array<Int?> = arrayOfNulls(4)
 
-// Assign values to some elements
-names[0] = "Alice"
-names[2] = "Bob"
+numbers[0] = 10
+numbers[2] = 30
 
-// Print the array contents
-println(names.contentToString())   // Output: [Alice, null, Bob]
+println(numbers.contentToString()) // Output: [10, null, 30, null]
 ```
 
 [Source](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/array-of-nulls.html)

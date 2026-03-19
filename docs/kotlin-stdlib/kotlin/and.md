@@ -13,11 +13,9 @@ import java.math.BigInteger
 
 fun main() {
     val a = BigInteger("15")   // binary 1111
-    val b = BigInteger("10")   // binary 1010
-
-    val c = a and b            // infix usage of BigInteger.and
-
-    println("$a AND $b = $c")  // prints: 15 AND 10 = 10
+    val b = BigInteger("9")    // binary 1001
+    val c = a and b            // binary AND: 1001 (9)
+    println(c)                 // prints 9
 }
 ```
 

@@ -8,13 +8,14 @@ Calls the specified function block with this value as its receiver and returns t
 @IgnorableReturnValueinline fun <T> T.apply(block: T.() -> Unit): T(source)
 ```
 
-val numbers = mutableListOf<Int>().apply {
-    add(10)
-    add(20)
-    add(30)
-}
+```kotlin
+data class User(var name: String = "", var age: Int = 0)
 
-println(numbers)
+val user = User().apply {
+    name = "Alice"
+    age = 30
+}
+```
 
 [Source](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/apply.html)
 

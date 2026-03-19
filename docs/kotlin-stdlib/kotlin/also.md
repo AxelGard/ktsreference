@@ -9,14 +9,11 @@ Calls the specified function block with this value as its argument and returns t
 ```
 
 ```kotlin
-val numbers = mutableListOf<Int>()
-    .also { list ->
-        list.add(1)
-        list.add(2)
-        list.add(3)
-    }
+val greeting = "Hello".also { println("Original value: $it") }
+    .uppercase()
+    .also { println("Modified value: $it") }
 
-println(numbers)  // Output: [1, 2, 3]
+println("Final result: $greeting")  // Outputs: FINAL RESULT: HELLO
 ```
 
 [Source](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/also.html)
