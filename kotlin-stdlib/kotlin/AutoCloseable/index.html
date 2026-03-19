@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>arrayOf - ktsreference</title>
+    <title>AutoCloseable - ktsreference</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "arrayOf";
-        var mkdocs_page_input_path = "kotlin-stdlib/kotlin/arrayOf.md";
+        var mkdocs_page_name = "AutoCloseable";
+        var mkdocs_page_input_path = "kotlin-stdlib/kotlin/AutoCloseable.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -51,7 +51,9 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" >Kotlin</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="../AutoCloseable/">AutoCloseable</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">AutoCloseable</a>
+    <ul class="current">
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../addSuppressed/">addSuppressed</a>
                 </li>
@@ -61,9 +63,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../apply/">apply</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">arrayOf</a>
-    <ul class="current">
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../arrayOf/">arrayOf</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../arrayOfNulls/">arrayOfNulls</a>
                 </li>
@@ -92,7 +92,7 @@
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Kotlin stdlib</li>
           <li class="breadcrumb-item">Kotlin</li>
-      <li class="breadcrumb-item active">arrayOf</li>
+      <li class="breadcrumb-item active">AutoCloseable</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -101,25 +101,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="arrayof">arrayOf</h1>
-<p>Returns an array containing the specified elements.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">expect</span><span class="w"> </span><span class="kd">inline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">arrayOf</span><span class="p">(</span><span class="k">vararg</span><span class="w"> </span><span class="n">elements</span><span class="p">:</span><span class="w"> </span><span class="n">T</span><span class="p">):</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+                <h1 id="autocloseable">AutoCloseable</h1>
+<p>Returns an AutoCloseable instance that executes the specified closeAction upon invocation of its close() function.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">expect</span><span class="w"> </span><span class="kd">inline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">AutoCloseable</span><span class="p">(</span><span class="n">crossinline</span><span class="w"> </span><span class="n">closeAction</span><span class="p">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">Unit</span><span class="p">):</span><span class="w"> </span><span class="n">AutoCloseable</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">names</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOf</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Charlie&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">kotlin.AutoCloseable</span>
 
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">joinToString</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">))</span><span class="w">   </span><span class="c1">// 1, 2, 3, 4, 5</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">names</span><span class="o">[</span><span class="m">0</span><span class="o">]</span><span class="p">)</span><span class="w">                    </span><span class="c1">// Alice</span>
+<span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">resource</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AutoCloseable</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Resource closed&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="na">use</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Using the resource&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/array-of.html">Source</a></p>
+<p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-auto-closeable.html">Source</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../apply/" class="btn btn-neutral float-left" title="apply"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../arrayOfNulls/" class="btn btn-neutral float-right" title="arrayOfNulls">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../about/" class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../addSuppressed/" class="btn btn-neutral float-right" title="addSuppressed">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -142,10 +146,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../apply/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../arrayOfNulls/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../addSuppressed/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

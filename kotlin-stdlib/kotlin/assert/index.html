@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>arrayOf - ktsreference</title>
+    <title>assert - ktsreference</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "arrayOf";
-        var mkdocs_page_input_path = "kotlin-stdlib/kotlin/arrayOf.md";
+        var mkdocs_page_name = "assert";
+        var mkdocs_page_input_path = "kotlin-stdlib/kotlin/assert.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -61,13 +61,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../apply/">apply</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">arrayOf</a>
-    <ul class="current">
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../arrayOf/">arrayOf</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../arrayOfNulls/">arrayOfNulls</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../assert/">assert</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">assert</a>
+    <ul class="current">
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../booleanArrayOf/">booleanArrayOf</a>
                 </li>
@@ -92,7 +92,7 @@
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Kotlin stdlib</li>
           <li class="breadcrumb-item">Kotlin</li>
-      <li class="breadcrumb-item active">arrayOf</li>
+      <li class="breadcrumb-item active">assert</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -101,25 +101,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="arrayof">arrayOf</h1>
-<p>Returns an array containing the specified elements.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">expect</span><span class="w"> </span><span class="kd">inline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">arrayOf</span><span class="p">(</span><span class="k">vararg</span><span class="w"> </span><span class="n">elements</span><span class="p">:</span><span class="w"> </span><span class="n">T</span><span class="p">):</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+                <h1 id="assert">assert</h1>
+<p>Throws an AssertionError if the value is false and runtime assertions have been enabled on the JVM using the -ea JVM option.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">inline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">assert</span><span class="p">(</span><span class="n">value</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)(</span><span class="n">source</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOf</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">names</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">arrayOf</span><span class="p">(</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Charlie&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
 
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">joinToString</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">))</span><span class="w">   </span><span class="c1">// 1, 2, 3, 4, 5</span>
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">names</span><span class="o">[</span><span class="m">0</span><span class="o">]</span><span class="p">)</span><span class="w">                    </span><span class="c1">// Alice</span>
+<span class="w">    </span><span class="c1">// Simple assertion using the inline assert with a lazy message</span>
+<span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Expected a (</span><span class="si">$</span><span class="n">a</span><span class="s">) to be greater than b (</span><span class="si">$</span><span class="n">b</span><span class="s">)&quot;</span><span class="w"> </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/array-of.html">Source</a></p>
+<p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/assert.html">Source</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../apply/" class="btn btn-neutral float-left" title="apply"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../arrayOfNulls/" class="btn btn-neutral float-right" title="arrayOfNulls">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../arrayOfNulls/" class="btn btn-neutral float-left" title="arrayOfNulls"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../booleanArrayOf/" class="btn btn-neutral float-right" title="booleanArrayOf">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -142,10 +142,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../apply/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../arrayOfNulls/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../arrayOfNulls/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../booleanArrayOf/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

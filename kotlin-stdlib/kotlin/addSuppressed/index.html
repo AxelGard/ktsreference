@@ -51,6 +51,8 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" >Kotlin</a>
     <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../AutoCloseable/">AutoCloseable</a>
+                </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">addSuppressed</a>
     <ul class="current">
     </ul>
@@ -62,6 +64,14 @@
                 <li class="toctree-l2"><a class="reference internal" href="../apply/">apply</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../arrayOf/">arrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../arrayOfNulls/">arrayOfNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../assert/">assert</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../booleanArrayOf/">booleanArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../byteArrayOf/">byteArrayOf</a>
                 </li>
     </ul>
                   </li>
@@ -92,24 +102,21 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="addsuppressed">addSuppressed</h1>
-<p><a href="/kotlin-stdlib">kotlin-stdlib</a> / <a href="/kotlin-stdlib/kotlin">kotlin</a> / <a href="kotlin-stdlib/kotlin/addSuppressed">addSuppressed</a></p>
 <p>When supported by the platform, adds the specified exception to the list of exceptions that were suppressed in order to deliver this exception.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">expect</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">Throwable</span><span class="p">.</span><span class="nf">addSuppressed</span><span class="p">(</span><span class="n">exception</span><span class="p">:</span><span class="w"> </span><span class="n">Throwable</span><span class="p">)(</span><span class="n">source</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RuntimeException</span><span class="p">(</span><span class="s">&quot;Primary exception&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">suppressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RuntimeException</span><span class="p">(</span><span class="s">&quot;Suppressed exception&quot;</span><span class="p">)</span>
+
 <span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// Primary operation that fails</span>
-<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">IllegalArgumentException</span><span class="p">(</span><span class="s">&quot;Primary exception&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">primary</span><span class="p">:</span><span class="w"> </span><span class="n">IllegalArgumentException</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="c1">// Secondary operation that also fails</span>
-<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">(</span><span class="s">&quot;Suppressed exception&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">suppressed</span><span class="p">:</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="c1">// Add the suppressed exception to the primary one</span>
-<span class="w">            </span><span class="n">primary</span><span class="p">.</span><span class="na">addSuppressed</span><span class="p">(</span><span class="n">suppressed</span><span class="p">)</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="c1">// Print the stack trace to see the suppressed exception</span>
-<span class="w">        </span><span class="n">primary</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">()</span>
+<span class="w">        </span><span class="c1">// Something that throws the primary exception</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">primary</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="w"> </span><span class="n">Throwable</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Add the suppressed exception</span>
+<span class="w">        </span><span class="n">e</span><span class="p">.</span><span class="na">addSuppressed</span><span class="p">(</span><span class="n">suppressed</span><span class="p">)</span>
+<span class="w">        </span><span class="c1">// Re‑throw so the stack trace contains both</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="n">e</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -118,7 +125,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../../about/" class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../AutoCloseable/" class="btn btn-neutral float-left" title="AutoCloseable"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../also/" class="btn btn-neutral float-right" title="also">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -142,7 +149,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../AutoCloseable/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../also/" style="color: #fcfcfc">Next &raquo;</a></span>

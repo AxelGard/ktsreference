@@ -51,6 +51,8 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" >Kotlin</a>
     <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../AutoCloseable/">AutoCloseable</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../addSuppressed/">addSuppressed</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../also/">also</a>
@@ -62,6 +64,14 @@
                 <li class="toctree-l2"><a class="reference internal" href="../apply/">apply</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../arrayOf/">arrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../arrayOfNulls/">arrayOfNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../assert/">assert</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../booleanArrayOf/">booleanArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../byteArrayOf/">byteArrayOf</a>
                 </li>
     </ul>
                   </li>
@@ -92,19 +102,18 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="and">and</h1>
-<p><a href="/kotlin-stdlib">kotlin-stdlib</a> / <a href="/kotlin-stdlib/kotlin">kotlin</a> / <a href="kotlin-stdlib/kotlin/and">and</a></p>
 <p>Performs a bitwise AND operation between the two values.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">infix</span><span class="w"> </span><span class="kd">inline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">.</span><span class="nf">and</span><span class="p">(</span><span class="n">other</span><span class="p">:</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">):</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nn">java.math.BigInteger</span>
 
 <span class="kd">fun</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">(</span><span class="s">&quot;0b1101&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">   </span><span class="c1">// 13</span>
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">(</span><span class="s">&quot;0b1011&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">   </span><span class="c1">// 11</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">(</span><span class="s">&quot;15&quot;</span><span class="p">)</span><span class="w">   </span><span class="c1">// binary 1111</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BigInteger</span><span class="p">(</span><span class="s">&quot;10&quot;</span><span class="p">)</span><span class="w">   </span><span class="c1">// binary 1010</span>
 
-<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">b</span><span class="w">              </span><span class="c1">// bitwise AND</span>
+<span class="w">    </span><span class="kd">val</span><span class="w"> </span><span class="nv">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">b</span><span class="w">            </span><span class="c1">// infix usage of BigInteger.and</span>
 
-<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">                   </span><span class="c1">// prints 9</span>
+<span class="w">    </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$</span><span class="n">a</span><span class="s"> AND </span><span class="si">$</span><span class="n">b</span><span class="s"> = </span><span class="si">$</span><span class="n">c</span><span class="s">&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1">// prints: 15 AND 10 = 10</span>
 <span class="p">}</span>
 </code></pre></div>
 <p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/and.html">Source</a></p>

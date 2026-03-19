@@ -51,6 +51,8 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" >Kotlin</a>
     <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../AutoCloseable/">AutoCloseable</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../addSuppressed/">addSuppressed</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../also/">also</a>
@@ -62,6 +64,14 @@
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../arrayOf/">arrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../arrayOfNulls/">arrayOfNulls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../assert/">assert</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../booleanArrayOf/">booleanArrayOf</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../byteArrayOf/">byteArrayOf</a>
                 </li>
     </ul>
                   </li>
@@ -92,17 +102,15 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="apply">apply</h1>
-<p><a href="/kotlin-stdlib">kotlin-stdlib</a> / <a href="/kotlin-stdlib/kotlin">kotlin</a> / <a href="kotlin-stdlib/kotlin/apply">apply</a></p>
 <p>Calls the specified function block with this value as its receiver and returns this value.</p>
 <div class="highlight"><pre><span></span><code><span class="nd">@IgnorableReturnValueinline</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="nf">apply</span><span class="p">(</span><span class="n">block</span><span class="p">:</span><span class="w"> </span><span class="n">T</span><span class="p">.()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">Unit</span><span class="p">):</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nv">age</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
-
-<span class="kd">val</span><span class="w"> </span><span class="nv">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Person</span><span class="p">().</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span>
-<span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">28</span>
-<span class="p">}</span>
-</code></pre></div>
+<p>val numbers = mutableListOf<Int>().apply {
+    add(10)
+    add(20)
+    add(30)
+}</p>
+<p>println(numbers)</p>
 <p><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/apply.html">Source</a></p>
               
             </div>
