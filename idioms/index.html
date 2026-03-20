@@ -1689,8 +1689,6 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >Kotlin.sequences</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../kotlin-stdlib/kotlin.sequences/Sequence/">Sequence</a>
-                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../kotlin-stdlib/kotlin.sequences/all/">all</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../kotlin-stdlib/kotlin.sequences/any/">any</a>
@@ -2733,14 +2731,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <div class="highlight"><pre><span></span><code>
-</code></pre></div>
-<h1 id="idioms">Idioms</h1>
+                <h1 id="idioms">Idioms</h1>
 <blockquote>
 <p>This is just a copy of the <a href="https://kotlinlang.org/docs/idioms.html">docs</a></p>
 </blockquote>
-<p>Edit page17 March 2026
-A collection of random and frequently used idioms in Kotlin. If you have a favorite idiom, contribute it by sending a pull request.</p>
+<p>A collection of random and frequently used idioms in Kotlin. 
+If you have a favorite idiom, contribute it by sending a pull request.</p>
 <h2 id="create-dtos-pojospocos">Create DTOs (POJOs/POCOs)</h2>
 <p><div class="highlight"><pre><span></span><code><span class="kd">data</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nc">Customer</span><span class="p">(</span><span class="kd">val</span><span class="w"> </span><span class="nv">name</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kd">val</span><span class="w"> </span><span class="nv">email</span><span class="p">:</span><span class="w"> </span><span class="kt">String</span><span class="p">)</span>
 </code></pre></div>
@@ -2773,8 +2769,8 @@ Learn the difference between Java and Kotlin filtering.</p>
 </code></pre></div>
 <p>Learn the difference between Java and Kotlin string concatenation.</p>
 <h2 id="read-standard-input-safely">Read standard input safely</h2>
-<p>// Reads a string and returns null if the input can't be converted into an integer. For example: Hi there!
-<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">wrongInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">readln</span><span class="p">().</span><span class="na">toIntOrNull</span><span class="p">()</span>
+<p><div class="highlight"><pre><span></span><code><span class="c1">// Reads a string and returns null if the input can&#39;t be converted into an integer. For example: Hi there!</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">wrongInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">readln</span><span class="p">().</span><span class="na">toIntOrNull</span><span class="p">()</span>
 <span class="n">println</span><span class="p">(</span><span class="n">wrongInt</span><span class="p">)</span>
 <span class="c1">// null</span>
 
